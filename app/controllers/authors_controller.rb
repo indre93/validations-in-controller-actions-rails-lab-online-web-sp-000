@@ -13,7 +13,7 @@ class AuthorsController < ApplicationController
       @author.save
       redirect_to author_path(@author)
     else
-      render action :new
+      render 'authors/new'
     end
   end
 
